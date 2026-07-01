@@ -1,0 +1,6 @@
+name: dev
+variables:
+  - name: baseUrl
+    value: http://devapi.jobfling.com
+  - name: token
+    value: ""

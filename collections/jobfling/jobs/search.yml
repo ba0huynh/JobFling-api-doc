@@ -1,0 +1,15 @@
+info:
+  name: search
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/jobs/search"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
