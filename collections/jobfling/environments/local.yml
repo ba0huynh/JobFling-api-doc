@@ -1,6 +1,6 @@
 name: local
 variables:
   - name: baseUrl
-    value: http://localhost:4000
+    value: ""
   - secret: true
     name: token
