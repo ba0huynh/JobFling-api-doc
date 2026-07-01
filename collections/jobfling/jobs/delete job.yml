@@ -1,0 +1,19 @@
+info:
+  name: delete job
+  type: http
+  seq: 5
+
+http:
+  method: delete
+  url: "{{baseUrl}}/jobs/:id"
+  params:
+    - name: id
+      value: ""
+      type: path
+  auth: inherit
+
+settings:
+  encodeUrl: false
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

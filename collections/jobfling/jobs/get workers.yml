@@ -1,0 +1,25 @@
+info:
+  name: get workers
+  type: http
+  seq: 7
+
+http:
+  method: get
+  url: https://devapi.jobfling.com/jobs/:id/workers?status=
+  headers:
+    - name: Authorization
+      value: Bearer 19a2c7179354c44711bc1175e244f03b14a29116f3c0f1050ab09664f171f24e
+  params:
+    - name: status
+      value: ""
+      type: query
+    - name: id
+      value: ""
+      type: path
+  auth: inherit
+
+settings:
+  encodeUrl: false
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

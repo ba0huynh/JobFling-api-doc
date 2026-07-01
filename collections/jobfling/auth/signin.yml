@@ -6,7 +6,21 @@ info:
 http:
   method: POST
   url: "{{baseUrl}}/auth/signin"
+  body:
+    type: json
+    data: |-
+      {
+        "email":{{email}},
+        "password": {{password}} 
+      }
   auth: inherit
+
+runtime:
+  variables:
+    - name: email
+      value: huynh8a0k5@gmail.com
+    - name: password
+      value: Huynhtanbao123@
 
 settings:
   encodeUrl: true
