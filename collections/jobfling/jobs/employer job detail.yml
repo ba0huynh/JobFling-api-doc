@@ -1,7 +1,7 @@
 info:
   name: employer job detail
   type: http
-  seq: 6
+  seq: 5
 
 http:
   method: get

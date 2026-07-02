@@ -1,14 +1,11 @@
 info:
-  name: search
+  name: worker's shifts
   type: http
-  seq: 1
+  seq: 3
 
 http:
-  method: POST
-  url: "{{baseUrl}}/jobs/search"
-  body:
-    type: json
-    data: ""
+  method: GET
+  url: "{{baseUrl}}/shifts"
   auth: inherit
 
 settings:

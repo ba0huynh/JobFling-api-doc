@@ -1,0 +1,23 @@
+info:
+  name: "delete "
+  type: http
+  seq: 6
+
+http:
+  method: DELETE
+  url: "{{baseUrl}}/shifts"
+  body:
+    type: json
+    data: |-
+      {
+      // array of strings
+        "shiftIds":[], 
+        "type" : "{{recurrenceActions}}"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

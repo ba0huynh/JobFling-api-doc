@@ -1,14 +1,15 @@
 info:
-  name: search
+  name: apply for shift
   type: http
-  seq: 1
+  seq: 4
 
 http:
   method: POST
-  url: "{{baseUrl}}/jobs/search"
-  body:
-    type: json
-    data: ""
+  url: "{{baseUrl}}/shifts/:id/apply"
+  params:
+    - name: id
+      value: ""
+      type: path
   auth: inherit
 
 settings:

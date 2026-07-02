@@ -1,0 +1,46 @@
+info:
+  name: update
+  type: http
+  seq: 7
+
+http:
+  method: PATCH
+  url: "{{baseUrl}]/shifts/:id"
+  params:
+    - name: id
+      value: ""
+      type: path
+  body:
+    type: json
+    data: |-
+      {
+        "startTime": "{{startTime}}",
+        "endTime": "{{endTime}}",
+        "paymentAmount": {{paymentAmount}},
+        "numberOfWorkers": {{numberOfWorkers}},
+        "title": "{{title}}",
+        "type": "{{recurrenceActions}}",
+        "approvalRequired": {{approvalRequired}},
+      }
+  auth: inherit
+
+runtime:
+  variables:
+    - name: approvalRequired
+      value: "true"
+    - name: title
+      value: "{{$randomJobTitle}}"
+    - name: numberOfWorkers
+      value: "{{$randomAlphaNumeric}}"
+    - name: startTime
+      value: "{{$isoTimestamp}}"
+    - name: endTime
+      value: "{{$isoTimestamp}}"
+    - name: paymentAmount
+      value: "{{$randomAlphaNumeric}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,11 +1,11 @@
 info:
-  name: delete job
+  name: confirm
   type: http
-  seq: 6
+  seq: 2
 
 http:
-  method: delete
-  url: "{{baseUrl}}/jobs/:id"
+  method: PATCH
+  url: "{{baseUrl}}/shifts/:id/confirm"
   params:
     - name: id
       value: ""
@@ -13,7 +13,7 @@ http:
   auth: inherit
 
 settings:
-  encodeUrl: false
+  encodeUrl: true
   timeout: 0
   followRedirects: true
   maxRedirects: 5
