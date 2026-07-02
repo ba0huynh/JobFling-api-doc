@@ -1,14 +1,14 @@
 info:
   name: search
   type: http
-  seq: 1
+  seq: 2
 
 http:
   method: POST
-  url: "{{baseUrl}}/jobs/search"
+  url: "{{route}}/search"
   body:
     type: json
-    data: ""
+    data: "{}"
   auth: inherit
 
 settings:

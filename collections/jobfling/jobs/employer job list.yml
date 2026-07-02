@@ -1,11 +1,11 @@
 info:
   name: employer job list
   type: http
-  seq: 3
+  seq: 1
 
 http:
   method: get
-  url: "{{baseUrl}}/jobs/employer"
+  url: "{{route}}/employer"
   auth: inherit
 
 settings:

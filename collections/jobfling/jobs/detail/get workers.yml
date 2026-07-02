@@ -1,14 +1,19 @@
 info:
-  name: employer job detail
+  name: get workers
   type: http
   seq: 5
 
 http:
   method: get
-  url: https://devapi.jobfling.com/jobs/63e66785-f97a-4870-a4b7-b464b034be48/employer
+  url: "{{routeDetail}}"
   headers:
     - name: Authorization
       value: Bearer 19a2c7179354c44711bc1175e244f03b14a29116f3c0f1050ab09664f171f24e
+  params:
+    - name: status
+      value: pending
+      type: query
+      disabled: true
   auth: inherit
 
 settings:

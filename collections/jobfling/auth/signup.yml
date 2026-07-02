@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{baseUrl}}/auth/signup"
+  url: "{{route}}/signup"
   body:
     type: json
     data: |-
@@ -18,8 +18,8 @@ http:
 
 runtime:
   variables:
-    - name: email
-      value: ""
+    - name: name
+      value: Bao Huynh
 
 settings:
   encodeUrl: true

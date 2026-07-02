@@ -1,11 +1,11 @@
 info:
-  name: get workers
+  name: employer job's shifts
   type: http
-  seq: 7
+  seq: 3
 
 http:
   method: get
-  url: https://devapi.jobfling.com/jobs/:id/workers?status=
+  url: "{{routeDetail}}/shifts"
   headers:
     - name: Authorization
       value: Bearer 19a2c7179354c44711bc1175e244f03b14a29116f3c0f1050ab09664f171f24e
@@ -13,9 +13,7 @@ http:
     - name: status
       value: ""
       type: query
-    - name: id
-      value: ""
-      type: path
+      disabled: true
   auth: inherit
 
 settings:
@@ -23,3 +21,10 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+
+docs: |-
+  Query :
+  - status:
+    - past
+    - active
+    - upcmoning

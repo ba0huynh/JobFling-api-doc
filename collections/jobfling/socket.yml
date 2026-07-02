@@ -1,0 +1,11 @@
+info:
+  name: socket
+  type: websocket
+  seq: 4
+
+websocket:
+  url: "{{baseUrl}}/ws"
+  message:
+    type: json
+    data: "{}"
+  auth: inherit

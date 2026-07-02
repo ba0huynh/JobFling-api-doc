@@ -5,3 +5,10 @@ info:
 
 request:
   auth: inherit
+  variables:
+    - name: email
+      value: ""
+    - name: password
+      value: ""
+    - name: route
+      value: "{{baseUrl}}/auth"

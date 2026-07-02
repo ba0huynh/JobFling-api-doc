@@ -1,15 +1,11 @@
 info:
   name: worker leave shift
   type: http
-  seq: 5
+  seq: 6
 
 http:
   method: DELETE
-  url: "{{baseUrl}}/shifts/:id/apply"
-  params:
-    - name: id
-      value: ""
-      type: path
+  url: "{{route}}/{{shiftId}}/apply"
   auth: inherit
 
 settings:

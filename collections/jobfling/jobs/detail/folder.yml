@@ -1,0 +1,12 @@
+info:
+  name: detail
+  type: folder
+  seq: 3
+
+request:
+  auth: inherit
+  variables:
+    - name: routeDetail
+      value: "{{route}}/{{jobId}}"
+    - name: jobId
+      value: ""

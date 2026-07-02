@@ -5,3 +5,18 @@ info:
 
 request:
   auth: inherit
+  variables:
+    - name: shiftId
+      value: ""
+    - name: route
+      value: "{{baseUrl}}/shifts"
+    - name: recurrenceActions
+      value: ""
+
+docs:
+  content: |-
+    recurrenceActions : 
+    - single 
+    - future
+    - all
+  type: text/markdown

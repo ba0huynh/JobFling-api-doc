@@ -1,15 +1,11 @@
 info:
-  name: detail worker
+  name: detail for employer
   type: http
-  seq: 2
+  seq: 1
 
 http:
   method: GET
-  url: "{{baseUrl}}/jobs/:id"
-  params:
-    - name: id
-      value: ""
-      type: path
+  url: "{{route}}/{{shiftId}}"
   auth: inherit
 
 settings:

@@ -5,3 +5,8 @@ info:
 
 request:
   auth: inherit
+  variables:
+    - name: route
+      value: "{{baseUrl}}/jobs"
+    - name: workerId
+      value: ""

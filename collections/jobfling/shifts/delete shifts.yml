@@ -1,11 +1,11 @@
 info:
-  name: "delete "
+  name: delete shifts
   type: http
-  seq: 6
+  seq: 7
 
 http:
   method: DELETE
-  url: "{{baseUrl}}/shifts"
+  url: "{{route}}"
   body:
     type: json
     data: |-

@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{baseUrl}}/auth/signin"
+  url: "{{route}}/signin"
   body:
     type: json
     data: |-
@@ -14,13 +14,6 @@ http:
         "password": "{{password}}"
       }
   auth: inherit
-
-runtime:
-  variables:
-    - name: email
-      value: huynh8a0k5@gmail.com
-    - name: password
-      value: Huynhtanbao123@
 
 settings:
   encodeUrl: true

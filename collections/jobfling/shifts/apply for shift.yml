@@ -1,15 +1,11 @@
 info:
   name: apply for shift
   type: http
-  seq: 4
+  seq: 3
 
 http:
   method: POST
-  url: "{{baseUrl}}/shifts/:id/apply"
-  params:
-    - name: id
-      value: ""
-      type: path
+  url: "{{route}}/{{shiftId}}/apply"
   auth: inherit
 
 settings:

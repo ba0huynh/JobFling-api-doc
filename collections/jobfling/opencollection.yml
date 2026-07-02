@@ -18,9 +18,6 @@ request:
   auth:
     type: bearer
     token: "{{token}}"
-  variables:
-    - name: recurrenceActions
-      value: single | future | all
 bundled: false
 extensions:
   bruno:
