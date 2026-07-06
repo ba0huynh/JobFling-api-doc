@@ -4,8 +4,11 @@ info:
   seq: 4
 
 websocket:
-  url: "{{baseUrl}}/ws"
+  url: "{{baseUrl}}/ws?token={{token}}"
   message:
     type: json
     data: "{}"
-  auth: inherit
+
+settings:
+  timeout: 0
+  keepAliveInterval: 0

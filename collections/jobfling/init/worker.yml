@@ -1,14 +1,17 @@
 info:
-  name: search
+  name: worker
   type: http
   seq: 1
 
 http:
   method: POST
-  url: "{{route}}/search"
+  url: "{{route}}"
   body:
     type: json
-    data: "{}"
+    data: |-
+      {
+        "search" :{}
+      }
   auth: inherit
 
 settings:

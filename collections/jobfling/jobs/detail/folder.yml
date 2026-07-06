@@ -1,7 +1,7 @@
 info:
   name: detail
   type: folder
-  seq: 3
+  seq: 4
 
 request:
   auth: inherit
@@ -9,4 +9,4 @@ request:
     - name: routeDetail
       value: "{{route}}/{{jobId}}"
     - name: jobId
-      value: ""
+      value: j2222222-2222-2222-2222-222222222222
