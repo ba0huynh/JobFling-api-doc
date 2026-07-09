@@ -6,6 +6,8 @@ info:
 collections:
   - name: "jobfling"
     path: "collections/jobfling"
+  - name: "chat"
+    path: "collections/chat"
 
 specs:
 

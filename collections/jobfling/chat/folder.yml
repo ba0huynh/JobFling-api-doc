@@ -1,0 +1,10 @@
+info:
+  name: chat
+  type: folder
+  seq: 6
+
+request:
+  auth: inherit
+  variables:
+    - name: route
+      value: "{{baseUrl}}/chats"

@@ -7,8 +7,8 @@ request:
   auth: inherit
   variables:
     - name: email
-      value: ""
+      value: huynh8a0k5@gmail.com
     - name: password
-      value: ""
+      value: Huynhtanbao123@
     - name: route
       value: "{{baseUrl}}/auth"

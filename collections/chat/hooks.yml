@@ -1,0 +1,26 @@
+info:
+  name: hooks
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: https://chat.jobfling.com/hooks/w7t8g84fcirbfqjqx4c4mwtz6o
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "text": "Hello, this is some text\nThis is more text. 🎉",
+        "username": "jobfling-bot",
+        "icon_url": "https://static.vecteezy.com/system/resources/thumbnails/048/775/730/small/cute-shih-tzu-dog-in-pink-sweatshirt-and-sunglasses-on-pastel-background-photo.jpg"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

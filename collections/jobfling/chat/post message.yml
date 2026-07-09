@@ -1,19 +1,22 @@
 info:
-  name: employer
+  name: post message
   type: http
   seq: 2
 
 http:
   method: POST
-  url: "{{route}}/employer"
+  url: "{{route}}/:id/messages"
+  params:
+    - name: id
+      value: ""
+      type: path
   body:
     type: json
     data: |-
       {
-        "search" :{}
+
       }
-  auth:
-    type: bearer
+  auth: inherit
 
 settings:
   encodeUrl: true
