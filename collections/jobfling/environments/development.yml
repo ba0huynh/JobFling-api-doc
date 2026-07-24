@@ -1,4 +1,4 @@
-name: dev
+name: development
 variables:
   - name: baseUrl
     value: https://devapi.jobfling.com

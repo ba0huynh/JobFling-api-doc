@@ -1,0 +1,15 @@
+info:
+  name: pending-workers
+  type: http
+  seq: 8
+
+http:
+  method: GET
+  url: "{{route}}/pending-workers"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

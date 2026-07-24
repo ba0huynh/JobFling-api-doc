@@ -6,6 +6,11 @@ info:
 http:
   method: GET
   url: "{{route}}"
+  params:
+    - name: loadedIds
+      value: 5d15d588-d287-45a0-a422-600176c19ac7
+      type: query
+      disabled: true
   auth: inherit
 
 settings:

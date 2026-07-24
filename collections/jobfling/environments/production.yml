@@ -1,0 +1,6 @@
+name: pro
+variables:
+  - name: baseUrl
+    value: https://api.jobfling.com
+  - secret: true
+    name: token

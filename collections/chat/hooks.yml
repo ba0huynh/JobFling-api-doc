@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: https://chat.jobfling.com/hooks/w7t8g84fcirbfqjqx4c4mwtz6o
+  url: https://chat.jobfling.com/hooks/6ct5jhstt3dfdr7a8eigd5niqw
   headers:
     - name: Content-Type
       value: application/json
@@ -14,8 +14,8 @@ http:
     data: |-
       {
         "text": "Hello, this is some text\nThis is more text. 🎉",
-        "username": "jobfling-bot",
-        "icon_url": "https://static.vecteezy.com/system/resources/thumbnails/048/775/730/small/cute-shih-tzu-dog-in-pink-sweatshirt-and-sunglasses-on-pastel-background-photo.jpg"
+        "username": "jobfling",
+        "icon_url": "https://cloud.jobfling.com/core/preview?fileId=115&x=2100&y=1312&a=true&etag=d6f4fb1b247c8907b71308a70d10c994"
       }
   auth: inherit
 

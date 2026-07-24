@@ -10,10 +10,10 @@ http:
     type: json
     data: |-
       {
-        "search" :{}
+      //   "search" :{}
       }
   auth:
-    type: bearer
+    type: basic
 
 settings:
   encodeUrl: true
