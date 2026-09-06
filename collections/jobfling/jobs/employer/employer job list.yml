@@ -1,18 +1,15 @@
 info:
-  name: employer
+  name: employer job list
   type: http
-  seq: 2
+  seq: 1
 
 http:
-  method: POST
+  method: get
   url: "{{route}}/employer"
-  body:
-    type: json
-    data: "{}"
   auth: inherit
 
 settings:
-  encodeUrl: true
+  encodeUrl: false
   timeout: 0
   followRedirects: true
   maxRedirects: 5

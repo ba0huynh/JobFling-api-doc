@@ -1,0 +1,45 @@
+info:
+  name: push test
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: https://fcm.googleapis.com/v1/projects/ban-say-toi-lai-cf735/messages:send
+  headers:
+    - name: Authorization
+      value: Bearer  {{token}}
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "message": {
+          "token": "e4B3UXeiRQOxUqMhOwE-JB:APA91bFVQBUa-aqURMbOOvBWauP4TcCcytfEZTS9mU1du-0UgL4QBQC3-GJXwnvNmiQTAWaDCJiBQcJtaEfrCTKxYs5-Af1L7oux2yDtbIx2i8JfDWX2EVg",
+          "notification": {
+            "title": "Push test",
+            "body": "If you can see this, FCM notifications work."
+          },
+          "android": {
+            "priority": "HIGH",
+            "notification": {
+              "sound": "default"
+            }
+          },
+          "apns": {
+            "payload": {
+              "aps": {
+                "sound": "default"
+              }
+            }
+          }
+        }
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

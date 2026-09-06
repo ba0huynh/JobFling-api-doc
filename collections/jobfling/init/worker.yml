@@ -8,10 +8,7 @@ http:
   url: "{{route}}"
   body:
     type: json
-    data: |-
-      {
-        "search" :{}
-      }
+    data: '{"search":{"schedules":[],"categories":[],"location":null,"schedule":false,"minimumHourlyPayment":null,"minimumTotalPayment":null,"showAllJobs":false}}'
   auth: inherit
 
 settings:

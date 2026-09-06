@@ -1,0 +1,20 @@
+info:
+  name: employer detail
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{route}}/:id/employer"
+  params:
+    - name: id
+      value: d8b48f95-17e9-49eb-aab0-2970df93b4ce
+      type: path
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

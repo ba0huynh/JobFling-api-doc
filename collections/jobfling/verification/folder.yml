@@ -1,0 +1,10 @@
+info:
+  name: verification
+  type: folder
+  seq: 15
+
+request:
+  auth: inherit
+  variables:
+    - name: route
+      value: "{{baseUrl}}/verification"

@@ -1,0 +1,26 @@
+info:
+  name: delete shift
+  type: http
+  seq: 7
+
+http:
+  method: DELETE
+  url: "{{route}}/:id"
+  params:
+    - name: id
+      value: 3cb1b2f6-1584-4059-bfb7-44b9f472f5c3
+      type: path
+  body:
+    type: json
+    data: |-
+      {
+      // array of strings
+        "type" : "{{recurrenceActions}}"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

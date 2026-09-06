@@ -1,0 +1,55 @@
+info:
+  name: start call
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{route}}/:id/call"
+  params:
+    - name: id
+      value: 7ef1c5c8-82bf-4914-99e8-05478d44f3b2
+      type: path
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: example
+    request:
+      url: "{{route}}/:id/call"
+      method: POST
+      params:
+        - name: id
+          value: 7ef1c5c8-82bf-4914-99e8-05478d44f3b2
+          type: path
+    response:
+      status: 200
+      statusText: OK
+      headers:
+        - name: access-control-allow-credentials
+          value: "true"
+        - name: alt-svc
+          value: h3=":443"; ma=2592000
+        - name: content-length
+          value: "303"
+        - name: content-type
+          value: application/json
+        - name: date
+          value: Mon, 17 Aug 2026 01:28:41 GMT
+        - name: vary
+          value: Origin
+      body:
+        type: json
+        data: |-
+          {
+            "token": "006bd8e1c42845a4876964cfff9a4ad468cIABTZUuOEO7Szq1O0vOJtNYOOkOUbl3kegYGYtD+3XoLdo6JH5DWJNo5IgA/euLuSbWDagQAAQDZcYJqAgDZcYJqAwDZcYJqBADZcYJq",
+            "appId": "bd8e1c42845a4876964cfff9a4ad468c",
+            "uid": 1413581599,
+            "channelName": "7ef1c5c8-82bf-4914-99e8-05478d44f3b2",
+            "expiresAt": "2026-08-17T02:28:41.000Z"
+          }

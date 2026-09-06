@@ -1,14 +1,11 @@
 info:
-  name: search
+  name: voip token
   type: http
-  seq: 1
+  seq: 10
 
 http:
-  method: POST
-  url: "{{route}}/search"
-  body:
-    type: json
-    data: "{}"
+  method: DELETE
+  url: "{{baseUrl}}/test"
   auth: inherit
 
 settings:

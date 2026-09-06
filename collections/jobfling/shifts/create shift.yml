@@ -1,0 +1,45 @@
+info:
+  name: create shift
+  type: http
+  seq: 9
+
+http:
+  method: POST
+  url: "{{route}}"
+  body:
+    type: json
+    data: |-
+      {
+        "date": "2026-08-27T09:19:31.376Z",
+        "shifts": [
+          {
+            "startTime": "2026-08-27T11:00:31.376Z",
+            "endTime": "2026-08-27T15:00:31.376Z",
+            "recurrenceRule": {
+              "byDay": [
+                "monday",
+                "thursday",
+                "friday",
+                "saturday"
+              ],
+              "end": {
+                "type": "count",
+                "count": 3,
+                "until": "2026-09-06T09:19:31.376Z"
+              },
+              "frequency": "weekly",
+              "interval": 1,
+              "weekAnchor": "thursday"
+            }
+          }
+        ],
+        "jobId": "1d5f4143-c7d2-4609-a8e2-e83edea8f990"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true

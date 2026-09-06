@@ -1,0 +1,18 @@
+info:
+  name: apple
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{route}}/social/apple"
+  body:
+    type: json
+    data: '{"identityToken":"eyJraWQiOiI1UkZPU2lOSVVtIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJodHRwczovL2FwcGxlaWQuYXBwbGUuY29tIiwiYXVkIjoiY29tLmpvYmZsaW5nLmpvYmZsaW5nIiwiZXhwIjoxNzg1ODMyNzM4LCJpYXQiOjE3ODU3NDYzMzgsInN1YiI6IjAwMTg2OS42MTgxYmRjMTFhZjE0NTRhOTNmNjA3ZWQ5ZjM3ZGFmMi4xNjIxIiwiY19oYXNoIjoibkxDWGVfbWdlUXhrSkgxMEJtUjctUSIsImVtYWlsIjoiaHV5bmg4YTBrNUBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXV0aF90aW1lIjoxNzg1NzQ2MzM4LCJub25jZV9zdXBwb3J0ZWQiOnRydWV9.cOcmRVGQ7flouxQg4HB-HR79rAE0FXRSq6CP-nl6kWCgnmz6HOpX5nSZucQmbxQ5fds1yqGQnTi5CMYqJZPY_9B_WpPG9gXdM3gpeU4ybydyOEiKi5JJV3UBRieifjEviKcwCY7y1YAwUAv4Cg1p4yLSRPUGsAE-Iljcz96AJy5yd-usPoCZmslaFAkH9PwYNOs0qlmJ7nAsbs4bDonPRgEXp-pXeIgRN7mZIRRoW8ej2nxrXpz42XBnGfsc9lwFDNzGtKkzmPoMqwtu2feQzNqwOeS2fBqHGdl1BV2Jd_inPFyCA2ls9b11gmzehqPfaQjuem-ooxnCOLZmNOcYTw"} '
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

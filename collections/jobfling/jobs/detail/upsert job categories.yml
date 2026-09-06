@@ -1,0 +1,22 @@
+info:
+  name: upsert job categories
+  type: http
+  seq: 7
+
+http:
+  method: PUT
+  url: "{{route}}/:id/categories"
+  params:
+    - name: id
+      value: 89dd0d34-adc9-4b56-a39f-836c40d4b1d7
+      type: path
+  body:
+    type: json
+    data: ' {"categories":[]}'
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

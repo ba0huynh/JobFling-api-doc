@@ -1,11 +1,14 @@
 info:
-  name: worker's shifts
+  name: categories
   type: http
   seq: 2
 
 http:
-  method: GET
-  url: "{{route}}"
+  method: PUT
+  url: "{{route}}/categories"
+  body:
+    type: json
+    data: '{"ids":[]}'
   auth: inherit
 
 settings:
@@ -13,4 +16,3 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
-  forwardAuthorizationHeader: true

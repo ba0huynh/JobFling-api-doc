@@ -10,3 +10,5 @@ request:
       value: "{{baseUrl}}/jobs"
     - name: workerId
       value: ""
+    - name: jobId
+      value: 1d5f4143-c7d2-4609-a8e2-e83edea8f990

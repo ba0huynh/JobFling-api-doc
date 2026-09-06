@@ -5,7 +5,7 @@ info:
 
 http:
   method: get
-  url: "{{routeDetail}}/employer"
+  url: "{{route}}/{{jobId}}/employer"
   headers:
     - name: Authorization
       value: Bearer 19a2c7179354c44711bc1175e244f03b14a29116f3c0f1050ab09664f171f24e

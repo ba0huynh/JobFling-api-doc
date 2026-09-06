@@ -7,11 +7,11 @@ request:
   auth: inherit
   variables:
     - name: shiftId
-      value: b10aeb4b-e7c4-470d-9a37-7316e0c93f97
+      value: 84906b49-1959-4354-b2aa-6a93d65559ec
     - name: route
       value: "{{baseUrl}}/shifts"
     - name: recurrenceActions
-      value: ""
+      value: all
 
 docs:
   content: |-

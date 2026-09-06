@@ -1,19 +1,14 @@
 info:
-  name: delete shifts
+  name: upsert
   type: http
-  seq: 7
+  seq: 1
 
 http:
-  method: DELETE
+  method: PUT
   url: "{{route}}"
   body:
     type: json
-    data: |-
-      {
-      // array of strings
-        "shiftIds":[], 
-        "type" : "{{recurrenceActions}}"
-      }
+    data: ' {"radius":14,"categories":[],"alwaysAvailable":true}'
   auth: inherit
 
 settings:

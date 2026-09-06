@@ -1,0 +1,26 @@
+info:
+  name: shift list
+  type: http
+  seq: 3
+
+http:
+  method: GET
+  url: "{{route}}/:id/shifts/formated?status=upcoming&workerStatus=pending"
+  params:
+    - name: status
+      value: upcoming
+      type: query
+    - name: workerStatus
+      value: pending
+      type: query
+    - name: id
+      value: 1d5f4143-c7d2-4609-a8e2-e83edea8f990
+      type: path
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true

@@ -1,0 +1,19 @@
+info:
+  name: get chat by user id
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: "{{route}}/users/:id"
+  params:
+    - name: id
+      value: "e5b5fe44-2f40-4654-bc9c-184af8f9fbf4 "
+      type: path
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

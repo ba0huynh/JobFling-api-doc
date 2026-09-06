@@ -1,7 +1,7 @@
 info:
   name: employer job's shifts
   type: http
-  seq: 3
+  seq: 2
 
 http:
   method: get

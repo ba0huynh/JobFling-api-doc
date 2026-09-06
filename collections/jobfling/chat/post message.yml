@@ -8,14 +8,12 @@ http:
   url: "{{route}}/:id/messages"
   params:
     - name: id
-      value: ""
+      value: 7ef1c5c8-82bf-4914-99e8-05478d44f3b2
       type: path
   body:
     type: json
-    data: |-
-      {
-
-      }
+    data: |
+      {"body":"hahahi","id":"7LsdfowweL","type":"text"}
   auth: inherit
 
 settings:

@@ -1,7 +1,7 @@
 info:
   name: worker's detail
   type: http
-  seq: 2
+  seq: 1
 
 http:
   method: GET

@@ -1,0 +1,25 @@
+info:
+  name: push test copy
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{baseUrl}}/push-test/fcm-notification"
+  headers:
+    - name: Authorization
+      value: Bearer  {{token}}
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {   "token": "e4B3UXeiRQOxUqMhOwE-JB:APA91bFVQBUa-aqURMbOOvBWauP4TcCcytfEZTS9mU1du-0UgL4QBQC3-GJXwnvNmiQTAWaDCJiBQcJtaEfrCTKxYs5-Af1L7oux2yDtbIx2i8JfDWX2EVg"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

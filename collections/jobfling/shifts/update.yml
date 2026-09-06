@@ -16,7 +16,7 @@ http:
         "numberOfWorkers": {{numberOfWorkers}},
         "title": "{{title}}",
         "type": "{{recurrenceActions}}",
-        "approvalRequired": {{approvalRequired}},
+        "approvalRequired": {{approvalRequired}}
       }
   auth: inherit
 

@@ -1,11 +1,11 @@
 info:
-  name: employer job list
+  name: vietqr bank list
   type: http
-  seq: 3
+  seq: 7
 
 http:
   method: get
-  url: "{{route}}/employer"
+  url: https://api.vietqr.io/v2/banks
   auth: inherit
 
 settings:

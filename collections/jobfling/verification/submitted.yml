@@ -1,14 +1,14 @@
 info:
-  name: employer
+  name: submitted
   type: http
-  seq: 2
+  seq: 1
 
 http:
   method: POST
-  url: "{{route}}/employer"
+  url: "{{route}}/submitted"
   body:
     type: json
-    data: "{}"
+    data: '{"challenges":["down","left","blink"]}'
   auth: inherit
 
 settings:
@@ -16,3 +16,4 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: false
